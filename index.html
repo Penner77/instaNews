@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instanews - Red Project 3</title>
-    <link rel="stylelsheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-    <h1>Hello there, everyone!</h1>
+<div class="mobileintro">
+    <h1><img src="assets/images/nyt-logo.svg">
+        <p>Choose a section:</p></h1>
+        <p>
+                <form class="form" action="sections.html">  
+                    <!-- placeholder page .html above -->
+                    <select name="sections">
+                      <option value="national">National</option>
+                      <option value="sports">Sports</option>
+                      <option value="editorial">Editorial</option>
+                      <option value="politics">Politics</option>
+                    </select>
+                  </form>
+                </p>    
+</div>
 
 
-    
     <script scr="./build/js/script.min.js"></script>
 </body>
 </html>

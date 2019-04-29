@@ -1,3 +1,23 @@
 body {
-    background-color: blue;
+    background-color: black;
+}
+
+.mobileintro {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 480px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    color: white;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.form {
+    color: white;
 }
