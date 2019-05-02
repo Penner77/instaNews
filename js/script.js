@@ -1,33 +1,31 @@
-// console.log('works');
-
-// run the ajax method on the select list change
-
-
-function loadArticles(category){
-    $.ajax({
-        method: 'get',
-        url: 'https://api.nytimes.com/svc/topstories/v2/science.json?api-key=ebd1IQb4CcFe94VTUSSn2AzJGnwhtEAl'
-      })
-      .done(function(data){
-        console.log(data);
-        $.each(data.results, function(key, value) {
-            console.log(value);
-            $(".api-results").append(value.section);
-        });// end of .each
-    });// end of .done and .ajax
-}
-
 
 $('#article-select').on('change', function() {
     const selected = $(this).val();
     if (selected !== '') {
         loadArticles(selected);
         //action here
-        // $(".apiResults").append().html(.results[0] .title);
     }
-  });
+// run the ajax method on the select list change
+function loadArticles(category){
+    $.ajax({
+        method: 'get',
+        url: 'https://api.nytimes.com/svc/topstories/v2/'+selected+'.json?api-key=ebd1IQb4CcFe94VTUSSn2AzJGnwhtEAl'
+      })
+      .done(function(data){
+        console.log(data);
+        $.each(data.results, function(key, value) {
+            console.log(value);
+            const abstract = value.abstract;
+            const pic = value.multimedia[3].url;
+            $('.api-results').append(`<p><caption>${abstract}` + `<img src="${pic}"</caption></p>`);
+        });// end of .each
+    });// end of .done and .ajax
+}
 
+});
 
+//TO TO - set pictures as background images with caption on top like on Aloha
+//TO TO - use "empty" to get rid of previous story selections
   
 // sections will be Home, Arts, Business, Sports, Technology, Fashion
 

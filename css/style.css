@@ -10,7 +10,7 @@ body {
     align-content: center;
     max-width: 480px;
     text-align: center;
-    min-height: 50vh;
+    /*min-height: 100vh;*/
     /* try flex direction column? */
     /* you want min view height vh as 100 as we will have the same page with images to scroll down */
 }
@@ -22,10 +22,11 @@ h1 {
     font-size: 1rem;
 }
 
-form {
+form, select {
     background: black;
     color: white;
 }
+
 
 .footer {
     font-family: 'Open Sans';
@@ -43,7 +44,7 @@ form {
     /* TABLET */
 
     .intro {
-        min-height: 100vh;
+        min-height: 50vh;
         max-width: 900px;
         text-align: center;
     }
