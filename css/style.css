@@ -1,14 +1,18 @@
 body {
     background-color: black;
+    color: white;
 }
 
-.mobileintro {
+.intro {
     display: block;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     max-width: 480px;
     text-align: center;
+    min-height: 50vh;
+    /* try flex direction column? */
+    /* you want min view height vh as 100 as we will have the same page with images to scroll down */
 }
 
 h1 {
@@ -18,6 +22,30 @@ h1 {
     font-size: 1rem;
 }
 
-.form {
+form {
+    background: black;
     color: white;
+}
+
+.footer {
+    font-family: 'Open Sans';
+    color: white;
+    align-items: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+
+@media screen and (min-width: 600px){
+    /* TABLET */
+
+    .intro {
+        min-height: 100vh;
+        max-width: 900px;
+        text-align: center;
+    }
+
 }
