@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    color: white;
+    max-width: 600px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.intro {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 480px;
+    text-align: center;
+    /*min-height: 100vh;*/
+    /* try flex direction column? */
+    /* you want min view height vh as 100 as we will have the same page with images to scroll down */
+}
+
+h1 {
+    font-family: 'Open Sans';
+    color: white;
+    align-items: center;
+    font-size: 1rem;
+}
+
+form, select {
+    background: black;
+    color: white;
+}
+
+.api-results {
+    // background-image: url;
+    // background-repeat: no-repeat, no-repeat;
+    // background-size: contain, cover;
+    // background-position: center 50px, center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-content: center;
+    align-items: center;
+}
+
+.article {
+    position: relative;
+
+    // object-fit: cover;
+    .pic-size {
+        max-width: 100%;
+        max-height: auto;
+    }
+    .abstract-summary {
+        position: absolute;
+        bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background: rgba(0,0,0,0.5);
+        color: white;
+    }
+}
+
+.footer {
+    font-family: 'Open Sans';
+    color: white;
+    align-items: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+
+// @media screen and (min-width: 600px){
+//     /* TABLET */
+
+//     .intro {
+//         min-height: 50vh;
+//         max-width: 900px;
+//         text-align: center;
+//     }
+
+// }

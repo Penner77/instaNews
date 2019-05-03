@@ -16,17 +16,22 @@ function loadArticles(category){
         $.each(data.results, function(key, value) {
             console.log(value);
             const abstract = value.abstract;
-            const pic = value.multimedia[3].url;
-            $('.api-results').append(`<p><caption>${abstract}</p>` + `<p><img src="${pic}"</caption></p>`);
+            const pic = value.multimedia[4].url;
+            $('.api-results').append(`
+                <a class="article" href="${value.url}">
+                    <p><img class="pic-size" src="${pic}"</p>
+                    <p class="abstract-summary">${abstract}</p>
+                </a>
+            `);
         });// end of .each
     });// end of .done and .ajax
 }
 
 });
 
-//TO TO - set pictures as background images with caption on top like on Aloha
-//TO TO - use "empty" to get rid of previous story selections
-  
+//TO DO - set pictures as background images with caption on top like on Aloha
+//TO DO - use "empty" to get rid of previous story selections
+  //you can add classes in the html above
 // sections will be Home, Arts, Business, Sports, Technology, Fashion
 
 
