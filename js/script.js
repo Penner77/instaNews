@@ -17,7 +17,7 @@ function loadArticles(category){
             console.log(value);
             const abstract = value.abstract;
             const pic = value.multimedia[3].url;
-            $('.api-results').append(`<p><caption>${abstract}` + `<img src="${pic}"</caption></p>`);
+            $('.api-results').append(`<p><caption>${abstract}</p>` + `<p><img src="${pic}"</caption></p>`);
         });// end of .each
     });// end of .done and .ajax
 }

@@ -27,6 +27,17 @@ form, select {
     color: white;
 }
 
+.api-results {
+    background-image: url;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
+    background-position: center 50px, center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
 
 .footer {
     font-family: 'Open Sans';
