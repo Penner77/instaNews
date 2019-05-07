@@ -313,6 +313,8 @@ template {
     color: white;
     max-width: 600px;
     min-height: 100vh; }
+  img {
+    max-width: 100%; }
   .intro {
     display: block;
     -ms-flex-wrap: wrap;
@@ -427,16 +429,17 @@ template {
         -ms-flex-align: center;
             align-items: center; }
   .article {
-    position: relative; }
+    position: relative;
+    width: 25%; }
     .article .pic-size {
-      width: 175px;
-      height: 250px; }
+      height: 250px;
+      position: top; }
     .article .abstract-summary {
       position: absolute;
       font-family: 'Open Sans';
       font-size: 1rem;
       color: white;
-      bottom: 10px;
+      bottom: 5px;
       margin-left: 5px;
       margin-right: 5px;
       background: rgba(0, 0, 0, 0.75);

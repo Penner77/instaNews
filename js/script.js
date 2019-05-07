@@ -13,7 +13,11 @@ function loadArticles(category){
       })
       .done(function(data){
         $('.api-results').empty();
-        $.each(data.results, function(key, value) {
+
+        const filteredData = data.results.filter(function(article){
+            return article.multimedia[4] !== undefined;}).slice(0,12);
+
+        $.each(filteredData, function(key, value) {
             console.log(value);
             const abstract = value.abstract;
             const pic = value.multimedia[4].url;

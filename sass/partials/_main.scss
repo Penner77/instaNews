@@ -7,6 +7,10 @@ body {
     min-height: 100vh;
 }
 
+img {
+    max-width: 100%;
+};
+
 .intro {
     display: block;
     flex-wrap: wrap;
@@ -105,18 +109,20 @@ form, select {
         align-items: center;
 }
 
+
 .article {
     position: relative;
+    width: 25%;
     .pic-size {
-        width: 175px;
         height: 250px;
+        position: top;
     }
     .abstract-summary {
         position: absolute;
         font-family: 'Open Sans';
         font-size: 1rem;
         color: white;
-        bottom: 10px;
+        bottom: 5px;
         margin-left: 5px;
         margin-right: 5px;
         background: rgba(0,0,0,.75);
