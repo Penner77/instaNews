@@ -4,7 +4,7 @@ $('#article-select').on('change', function() {
     if (selected !== '') {
         loadArticles(selected);
         //action here
-    }
+    } 
 // run the ajax method on the select list change
 function loadArticles(category){
     $.ajax({
@@ -12,7 +12,7 @@ function loadArticles(category){
         url: 'https://api.nytimes.com/svc/topstories/v2/'+selected+'.json?api-key=ebd1IQb4CcFe94VTUSSn2AzJGnwhtEAl'
       })
       .done(function(data){
-        console.log(data);
+        $('.api-results').empty();
         $.each(data.results, function(key, value) {
             console.log(value);
             const abstract = value.abstract;
@@ -25,7 +25,7 @@ function loadArticles(category){
             `);
         });// end of .each
     });// end of .done and .ajax
-}
+}  
 
 });
 
@@ -33,7 +33,6 @@ function loadArticles(category){
 //TO DO - use "empty" to get rid of previous story selections
   //you can add classes in the html above
 // sections will be Home, Arts, Business, Sports, Technology, Fashion
-
 
 
 

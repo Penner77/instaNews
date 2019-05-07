@@ -1,11 +1,10 @@
+@media screen and (max-width: 599px) {
+
 body {
     background-color: black;
     color: white;
     max-width: 600px;
-}
-
-img {
-    max-width: 100%;
+    min-height: 100vh;
 }
 
 .intro {
@@ -33,31 +32,27 @@ form, select {
 }
 
 .api-results {
-    // background-image: url;
-    // background-repeat: no-repeat, no-repeat;
-    // background-size: contain, cover;
-    // background-position: center 50px, center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-content: center;
     align-items: center;
 }
 
 .article {
     position: relative;
-
-    // object-fit: cover;
     .pic-size {
         max-width: 100%;
         max-height: auto;
     }
     .abstract-summary {
         position: absolute;
-        bottom: 5px;
+        font-family: 'Open Sans';
+        font-size: 1rem;
+        color: white;
+        bottom: 10px;
         margin-left: 5px;
         margin-right: 5px;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,.75);
         color: white;
     }
 }
@@ -71,16 +66,63 @@ form, select {
     justify-content: center;
     padding-top: 50px;
 }
+};
 
 
+@media screen and (min-width: 600px) {
 
-// @media screen and (min-width: 600px){
-//     /* TABLET */
+    body {
+        background-color: black;
+        color: white;
+    }
 
-//     .intro {
-//         min-height: 50vh;
-//         max-width: 900px;
-//         text-align: center;
-//     }
+    .intro {
+        display: flex;
+        flex-direction: column;        
+        justify-content: center;
+        align-content: center;
+        max-width: 100%;
+        text-align: center;
+    }
 
-// }
+    h1 {
+        font-family: 'Open Sans';
+        color: white;
+        align-items: center;
+        font-size: 1rem;
+}
+
+    form, select {
+        background: black;
+        color: white;
+}
+
+    .api-results {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+}
+
+.article {
+    position: relative;
+    .pic-size {
+        width: 175px;
+        height: 250px;
+    }
+    .abstract-summary {
+        position: absolute;
+        font-family: 'Open Sans';
+        font-size: 1rem;
+        color: white;
+        bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background: rgba(0,0,0,.75);
+        color: white;
+    }
+}
+
+
+}
