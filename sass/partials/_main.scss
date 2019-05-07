@@ -115,12 +115,13 @@ form, select {
     width: 25%;
     .pic-size {
         height: 250px;
-        position: top;
+        width: 100%;
+        position: center top;
     }
     .abstract-summary {
         position: absolute;
         font-family: 'Open Sans';
-        font-size: 1rem;
+        font-size: .9rem;
         color: white;
         bottom: 5px;
         margin-left: 5px;
@@ -130,5 +131,14 @@ form, select {
     }
 }
 
+.footer {
+    font-family: 'Open Sans';
+    color: white;
+    align-items: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
 
 }

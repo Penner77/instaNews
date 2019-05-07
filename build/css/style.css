@@ -433,14 +433,29 @@ template {
     width: 25%; }
     .article .pic-size {
       height: 250px;
-      position: top; }
+      width: 100%;
+      position: center top; }
     .article .abstract-summary {
       position: absolute;
       font-family: 'Open Sans';
-      font-size: 1rem;
+      font-size: .9rem;
       color: white;
       bottom: 5px;
       margin-left: 5px;
       margin-right: 5px;
       background: rgba(0, 0, 0, 0.75);
-      color: white; } }
+      color: white; }
+  .footer {
+    font-family: 'Open Sans';
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px; } }
