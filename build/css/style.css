@@ -359,8 +359,11 @@ template {
       background: rgba(0, 0, 0, 0.75);
       color: white; }
     .article img {
-      max-width: 100%;
-      opacity: .8; }
+      height: 400px;
+      width: 100%;
+      opacity: .8;
+      -o-object-fit: cover;
+         object-fit: cover; }
     .article img:hover {
       opacity: 1; }
   .footer {
