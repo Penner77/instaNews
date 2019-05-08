@@ -13,14 +13,17 @@ img {
 
 .intro {
     display: block;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    max-width: 480px;
+    padding-top: 150px;
     text-align: center;
     /*min-height: 100vh;*/
     /* try flex direction column? */
     /* you want min view height vh as 100 as we will have the same page with images to scroll down */
+    &.active {
+        padding:0;
+        img {
+            max-width: 100px;
+        }
+    }
 }
 
 h1 {
@@ -72,6 +75,7 @@ form, select {
 }
 };
 
+// ****************************************** 600 ******************************************
 
 @media screen and (min-width: 600px) {
 
@@ -82,21 +86,24 @@ form, select {
 
     .intro {
         display: flex;
-        flex-direction: column;        
+        flex-direction: row;        
         justify-content: center;
-        align-content: center;
+        align-items: center;
         max-width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
-    h1 {
+    h1 .choose {
         font-family: 'Open Sans';
         color: white;
-        align-items: center;
         font-size: 1rem;
 }
 
-    form, select {
+.choose {
+    align-items: center;
+};
+
+    .form, select {
         background: black;
         color: white;
 }
@@ -116,7 +123,7 @@ form, select {
     .pic-size {
         height: 250px;
         width: 100%;
-        position: center top;
+        object-fit: cover;
     }
     .abstract-summary {
         position: absolute;

@@ -317,18 +317,15 @@ template {
     max-width: 100%; }
   .intro {
     display: block;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    max-width: 480px;
+    padding-top: 150px;
     text-align: center;
     /*min-height: 100vh;*/
     /* try flex direction column? */
     /* you want min view height vh as 100 as we will have the same page with images to scroll down */ }
+    .intro.active {
+      padding: 0; }
+      .intro.active img {
+        max-width: 100px; }
   h1 {
     font-family: 'Open Sans';
     color: white;
@@ -391,25 +388,27 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    max-width: 100%;
-    text-align: center; }
-  h1 {
-    font-family: 'Open Sans';
-    color: white;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 100%;
+    text-align: left; }
+  h1 .choose {
+    font-family: 'Open Sans';
+    color: white;
     font-size: 1rem; }
-  form, select {
+  .choose {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .form, select {
     background: black;
     color: white; }
   .api-results {
@@ -434,7 +433,8 @@ template {
     .article .pic-size {
       height: 250px;
       width: 100%;
-      position: center top; }
+      -o-object-fit: cover;
+         object-fit: cover; }
     .article .abstract-summary {
       position: absolute;
       font-family: 'Open Sans';
