@@ -10,9 +10,6 @@ body {
     display: block;
     padding-top: 150px;
     text-align: center;
-    /*min-height: 100vh;*/
-    /* try flex direction column? */
-    /* you want min view height vh as 100 as we will have the same page with images to scroll down */
     &.active {
         padding:0;
         img {
@@ -82,7 +79,7 @@ form, select {
 
 // ****************************************** 600 ******************************************
 
-@media screen and (min-width: 600px) {
+@include tablet {
 
     body {
         background-color: black;
@@ -172,3 +169,30 @@ form, select {
 }
 
 }
+
+@include desktop {
+
+    body {
+        background-color: black;
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro {
+        display: flex;       
+        justify-content: left;
+        padding-top: 10%;
+        &.active {
+            padding:0;
+            img {
+                max-width: 50px;
+                padding-right: 75px;
+            }
+        }
+    }
+
+
+};

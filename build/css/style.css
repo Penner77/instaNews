@@ -314,10 +314,7 @@ template {
   .intro {
     display: block;
     padding-top: 150px;
-    text-align: center;
-    /*min-height: 100vh;*/
-    /* try flex direction column? */
-    /* you want min view height vh as 100 as we will have the same page with images to scroll down */ }
+    text-align: center; }
     .intro.active {
       padding: 0; }
       .intro.active img {
@@ -382,7 +379,7 @@ template {
     padding-top: 50px;
     padding-bottom: 50px; } }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   body {
     background-color: black;
     color: white;
@@ -467,3 +464,32 @@ template {
             justify-content: center;
     padding-top: 50px;
     padding-bottom: 25px; } }
+
+@media (min-width: 1000px) {
+  body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-top: 10%; }
+    .intro.active {
+      padding: 0; }
+      .intro.active img {
+        max-width: 50px;
+        padding-right: 75px; } }
