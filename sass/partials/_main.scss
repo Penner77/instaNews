@@ -1,4 +1,3 @@
-@media screen and (max-width: 599px) {
 
 body {
     background-color: black;
@@ -9,6 +8,7 @@ body {
 .loader {
     height: 200px;
     margin: 0 auto;
+    display: block;
 }
 
 .intro {
@@ -110,10 +110,18 @@ p.img-frame {
         justify-content: center;
     }
 
+    .api-results {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     .intro {
         display: flex;       
         justify-content: center;
         align-items: center;
+        text-align: left;
         &.active {
             padding:0;
             img {
@@ -139,7 +147,7 @@ p.img-frame {
 .choose {
     align-items: center;
     padding-right: 100px;
-};
+}
 
     .form, select {
         background: black;
@@ -223,6 +231,13 @@ p.img-frame {
         justify-content: center;
     }
 
+    .api-results {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     p.img-frame {
         display: block;
         margin-block-start: 0em;
@@ -277,4 +292,4 @@ p.img-frame {
     .footer-news {
         text-transform: uppercase;
     }
-}}
+}

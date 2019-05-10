@@ -2,14 +2,15 @@
 $('#article-select').on('change', function () {
 
     $('.intro').addClass('active');
-
     const selected = $(this).val();
     if (selected !== '') {
+        $('.api-results').empty();
         $('.api-results').append(
             '<img class="loader" src="assets/images/ajax-loader.gif">');
         loadArticles(selected);
         //action here
     }
+    
     // run the ajax method on the select list change
     function loadArticles(category) {
         $.ajax({
