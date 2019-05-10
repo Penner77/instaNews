@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeff Penner's InstaNews Project">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instanews - Red Project 3</title>
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./build/css/style.min.css">
 
 </head>
@@ -16,27 +17,24 @@
         <div class="selector">
          <p class="choose">Choose a section:
             <form class="form" action="#">  
-                    <!-- placeholder page .html above -->
                  <select id="article-select" name="sections" aria-label="selections-menu">
-                    <option value="" aria-label="home">Home</option>
-                    <option value="arts" aria-label="arts">Arts</option>
-                    <option value="business" aria-label="business">Business</option>
-                    <option value="sports" aria-label="sports">Sports</option>
-                    <option value="science" aria-label="science">Science</option>
-                    <option value="fashion" aria-label="fashion">Fashion</option>
+                    <option value="" label="home">Home</option>
+                    <option value="arts" label="arts">Arts</option>
+                    <option value="business" label="business">Business</option>
+                    <option value="sports" label="sports">Sports</option>
+                    <option value="science" label="science">Science</option>
+                    <option value="fashion" label="fashion">Fashion</option>
                  </select>
             </form>
-         </div>
-        </p>           
+         </p> 
+        </div>
+                  
 </div>
-<!-- <div class="loader"><img src="assets/images/ajax-loader.gif"></div> -->
 <div class="api-results"></div>
-
-<!-- https://red-wdp.herokuapp.com/slides/02-intro-to-jquery/#52  for the drop down menu -->
 
 <footer>
     <div class="footer">
-            &copy; Copyright 2016 &nbsp;<span class="footer-news">Instanews</span></div>
+            &copy; Copyright 2016 &nbsp;<span class="footer-news">Instanews</span>
     </div>
 </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
