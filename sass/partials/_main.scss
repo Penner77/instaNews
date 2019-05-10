@@ -37,6 +37,14 @@ form, select {
     align-items: center;
 }
 
+p.img-frame {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .article {
     position: relative;
  
@@ -45,9 +53,10 @@ form, select {
         font-family: 'Open Sans';
         font-size: 1rem;
         color: white;
-        bottom: 10px;
+        bottom: 2px;
         margin-left: 5px;
         margin-right: 5px;
+        margin-bottom: 1px;
         background: rgba(0,0,0,.75);
         color: white;
     }
@@ -109,6 +118,14 @@ form, select {
         font-size: 1rem;
 }
 
+p.img-frame {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .choose {
     align-items: center;
     padding-right: 100px;
@@ -125,10 +142,17 @@ form, select {
 
 }
 
+.img-frame {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 .article {
     position: relative;
-    width: 25%;
+    width: 33%;
     .pic-size {
         height: 250px;
         width: 100%;
@@ -149,9 +173,10 @@ form, select {
         font-family: 'Open Sans';
         font-size: .9rem;
         color: white;
-        bottom: 5px;
+        bottom: 2px;
         margin-left: 5px;
         margin-right: 5px;
+        margin-bottom: 1px;
         background: rgba(0,0,0,.75);
         color: white;
     }
@@ -181,6 +206,14 @@ form, select {
         justify-content: center;
     }
 
+    p.img-frame {
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
     .intro {
         display: flex;       
         justify-content: left;
@@ -194,5 +227,36 @@ form, select {
         }
     }
 
+    .article {
+        position: relative;
+        width: 25%;
+        .pic-size {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        img {
+            // max-width: 100%;
+            opacity: .85;
+        }
+        
+        img:hover {
+            opacity: 1;
+        }
+    
+        .abstract-summary {
+            position: absolute;
+            font-family: 'Open Sans';
+            font-size: 1rem;
+            color: white;
+            bottom: 2px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 1px;
+            background: rgba(0,0,0,.75);
+            color: white;
+        }
+    }
 
 };

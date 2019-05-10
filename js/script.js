@@ -27,7 +27,7 @@ $('#article-select').on('change', function () {
                     const pic = value.multimedia[4].url;
                     $('.api-results').append(`
                 <a class="article" href="${value.url}">
-                    <p><img class="pic-size" src="${pic}"</p>
+                    <p class="img-frame"><img class="pic-size" src="${pic}"</p>
                     <p class="abstract-summary">${abstract}</p>
                 </a>
             `);
