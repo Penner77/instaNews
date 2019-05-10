@@ -5,6 +5,10 @@ body {
     color: white;
 }
 
+.loader {
+    height: 200px;
+    margin: 0 auto;
+}
 
 .intro {
     display: block;
@@ -89,6 +93,11 @@ p.img-frame {
 // ****************************************** 600 ******************************************
 
 @include tablet {
+
+    .loader {
+        height: 200px;
+        margin: 0 auto;
+    }
 
     body {
         background-color: black;
@@ -196,6 +205,11 @@ p.img-frame {
 }
 
 @include desktop {
+
+    .loader {
+        height: 200px;
+        margin: 0 auto;
+    }
 
     body {
         background-color: black;
