@@ -307,10 +307,16 @@ template {
 [hidden] {
   display: none; }
 
+/* --------------------------------------------------------
+Style Sheet for Jeff Penner's InstaNews Project
+Includes reference to _variables.scss, _mixins.scss & _reset.css
+Two media queries from mobile-first: 600px "tablet" & 1000px "desktop" */
 body {
   background-color: black;
   color: white;
-  font-family: 'OpenSans-Light'; }
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal; }
 
 .loader {
   height: 200px;

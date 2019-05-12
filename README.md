@@ -21,6 +21,8 @@ SCSS/SASS
 AJax
 API feed via New York Times
 Git/GitHub
+Gulp
+Browser Sync
 Terminal 
 Elements and attributes
 Doctypes, meta tags and comments
@@ -43,6 +45,8 @@ In this project I learned how to properly execute the connection between jQuery 
 
 ![picture](./assets/images/lighthouse-review-100-100-100-100.jpg)
 
+## Stretch Goals
+1. Each pulled article image is set to display at .85 and to display at 1 when the users hovers their mouse over it (obviously the idea behind this would be exclusive to desktop/mouse users).
 
 Link to the site: hhttps://penner77.github.io/instaNews/
  

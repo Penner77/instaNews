@@ -1,8 +1,15 @@
+/* --------------------------------------------------------
+Style Sheet for Jeff Penner's InstaNews Project
+Includes reference to _variables.scss, _mixins.scss & _reset.css
+Two media queries from mobile-first: 600px "tablet" & 1000px "desktop" */
+
 
 body {
     background-color: black;
     color: white;
-    font-family: 'OpenSans-Light';
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: normal;
 }
 
 .loader {
@@ -32,6 +39,7 @@ h1 {
 form, select {
     background: black;
     color: white;
+
 }
 
 .api-results {
@@ -92,8 +100,6 @@ p.img-frame {
 }
 
 
-// ****************************************** 600 ******************************************
-
 @include tablet {
 
     .loader {
@@ -136,46 +142,46 @@ p.img-frame {
         font-size: 1rem;
 }
 
-p.img-frame {
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.choose {
-    align-items: center;
-    padding-right: 100px;
-}
-
-    .form, select {
-        background: black;
-        color: white;
-}
-
-    .api-results {
-        display: flex;
-        flex-wrap: wrap;
-
-}
-
-.img-frame {
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.article {
-    position: relative;
-    width: 33%;
-    .pic-size {
-        height: 250px;
-        width: 100%;
-        object-fit: cover;
+    p.img-frame {
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
+
+    .choose {
+        align-items: center;
+        padding-right: 100px;
+    }
+
+        .form, select {
+            background: black;
+            color: white;
+    }
+
+        .api-results {
+            display: flex;
+            flex-wrap: wrap;
+
+    }
+
+    .img-frame {
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .article {
+        position: relative;
+        width: 33%;
+        .pic-size {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
 
     img {
         // max-width: 100%;
@@ -199,19 +205,19 @@ p.img-frame {
     }
 }
 
-.footer-news {
-    text-transform: uppercase;
-}
+    .footer-news {
+        text-transform: uppercase;
+    }
 
-.footer {
-    color: white;
-    align-items: center;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 25px;
-}
+    .footer {
+        color: white;
+        align-items: center;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
 
 }
 
