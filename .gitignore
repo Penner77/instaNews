@@ -20,6 +20,10 @@ ehthumbs.db
 *.tar
 *.zip
 
+# Images #
+# ============== #
+*.ico
+
 # Ignore packages #
 # =============== #
 node_modules/
