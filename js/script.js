@@ -49,9 +49,7 @@ $(function() {
         
             .fail(function(){
                 $('.api-results').append('Sorry, there was an error');
-            })
-            .always(function(){
-                (".loader").hide();
+          
             });
         
     }});
