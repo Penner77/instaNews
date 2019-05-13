@@ -13,31 +13,31 @@ Visual Studio Code
 Google Chrome Developer Tools
 HTML Validator (https://validator.w3.org/nu/#file)
 CSS Validator (https://jigsaw.w3.org/css-validator/#validate_by_upload)
-HTML
-CSS 
-JavaScript
-jQuery 
-SCSS/SASS
-AJax
-API feed via New York Times
-Git/GitHub
-Gulp
-Browser Sync
-Terminal 
-Elements and attributes
-Doctypes, meta tags and comments
-Structure of a webpage knowledge
-Form elements
-Flexbox
-Classes and IDs
-Color and backgrounds
-CSS "reset" 
-Icon Fonts
-Developer tools
-Responsive Web Design
-Mobile-first
-CSS3 properties
-Operators and Control Flow
+HTML\
+CSS \
+JavaScript\
+jQuery \
+SCSS/SASS\
+AJax\
+API feed via New York Times\
+Git/GitHub\
+Gulp\
+Browser Sync\
+Terminal \
+Elements and attributes\
+Doctypes, meta tags and comments\
+Structure of a webpage knowledge\
+Form elements\
+Flexbox\
+Classes and IDs\
+Color and backgrounds\
+CSS "reset" \
+Icon Fonts\
+Developer tools\
+Responsive Web Design\
+Mobile-first\
+CSS3 properties\
+Operators and Control Flow\
 Functions
 
 ## What I Learned
