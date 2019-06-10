@@ -1,8 +1,8 @@
-
 # InstaNews by Jeff Penner
 
-Instanews features an API feed via The New York Times, with the website built using HTML, CSS and JavaScript and jQuery. This site was built based on mock-up photos provided of how the site should appear at 3 different media/screen sizes: 
-- mobile, tablet and desktop. 
+Instanews features an API feed via The New York Times, with the website built using HTML, CSS and JavaScript and jQuery. This site was built based on mock-up photos provided of how the site should appear at 3 different media/screen sizes:
+
+- mobile, tablet and desktop.
 
 ![picture](./assets/images/instanews-main-desktop.jpg)
 
@@ -40,14 +40,16 @@ CSS3 properties\
 Operators and Control Flow\
 Functions
 
+![picture](./assets/images/git-menu-loader.gif)
+
 ## What I Learned
+
 In this project I learned how to properly execute the connection between jQuery and the Ajax API, as well as the importance of Accessibility (A11Y) and how to properly audit your code for best practices and SEO using Developer Tools. I was able to get the site to have 100% on it's Chrome Developer Tools audit:
 
 ![picture](./assets/images/lighthouse-review-100-100-100-100.jpg)
 
 ## Stretch Goals
+
 1. Each pulled article image is set to display at .85 and to display at 1 when the users hovers their mouse over it (obviously the idea behind this would be exclusive to desktop/mouse users).
 
 Link to the site: hhttps://penner77.github.io/instaNews/
- 
-
