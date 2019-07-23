@@ -16,7 +16,7 @@ $(function() {
     function loadArticles(category) {
         $.ajax({
             method: 'get',
-            url: 'https://api.nytimes.com/svc/topstories/v2/' + selected + '.json?api-key=ebd1IQb4CcFe94VTUSSn2AzJGnwhtEAl'
+            url: 'https://api.nytimes.com/svc/topstories/v2/' + category + '.json?api-key=ebd1IQb4CcFe94VTUSSn2AzJGnwhtEAl'
         })
         
             .done(function (data) {
@@ -27,7 +27,7 @@ $(function() {
                 }).slice(0, 12);
 
                 $.each(filteredData, function (key, value) {
-                    console.log(value);
+                  
                     const abstract = value.abstract;
                     const pic = value.multimedia[4].url;
 
@@ -38,7 +38,7 @@ $(function() {
                     };
        
                     $('.api-results').append(`
-                <a class="article" href="${value.url}">
+                <a class="article" href="${value.url}" target="_blank">
                     <p class="img-frame"><img alt="${altDescription}" class="pic-size" src="${pic}"</p>
                     <p class="abstract-summary">${abstract}</p>
                 </a>
